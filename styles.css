@@ -49,7 +49,7 @@ body {
 .section-title {
     font-size: 18px;
     font-weight: 600;
-    margin: 35px 0 15px;
+    margin: 25px 0 15px;
 }
 
 /* Social Icons */
@@ -57,7 +57,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 85px;
 }
 
 .icon {
@@ -71,13 +71,41 @@ body {
     opacity: 0.7;
 }
 
+/* Slideshow */
+.slideshow {
+    width: 100%;
+    max-width: 420px;  /* match Canva image */
+    height: 280px;     /* match Canva image */
+    margin: 0 auto 25px auto;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.slideshow .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow .slide.active {
+    opacity: 1;
+}
+
 /* Service Cards */
 .service-card {
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 20px;
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 85px;
     background: #fff;
 }
 
@@ -90,6 +118,17 @@ body {
     font-size: 14px;
     color: #555;
     line-height: 1.5;
+}
+
+/* Canva Training Image */
+.service-image {
+    width: 100%;
+    max-width: 420px;   /* match slideshow width */
+    height: 280px;      /* match slideshow height */
+    border-radius: 12px;
+    margin-bottom: 15px;
+    object-fit: contain;
+    object-position: center;
 }
 
 /* Footer */

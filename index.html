@@ -30,6 +30,16 @@
 
         <div class="section-title">Our Services</div>
 
+        <!-- Slideshow for first service -->
+        <div class="slideshow">
+            <img src="assets/images/design1.png" alt="Design Sample 1" class="slide active">
+            <img src="assets/images/design2.png" alt="Design Sample 2" class="slide">
+            <img src="assets/images/design3.png" alt="Design Sample 3" class="slide">
+            <img src="assets/images/design4.png" alt="Design Sample 4" class="slide">
+            <img src="assets/images/design5.png" alt="Design Sample 5" class="slide">
+        </div>
+
+        <!-- First service card -->
         <div class="service-card">
             <h2>Professional Design Services</h2>
             <p>
@@ -37,6 +47,10 @@
             </p>
         </div>
 
+        <!-- Canva Training image above second service -->
+        <img src="assets/images/canva-training.png" alt="Canva Training Example" class="service-image">
+
+        <!-- Second service card -->
         <div class="service-card">
             <h2>Canva Training & Ad Strategy Workshops</h2>
             <p>
@@ -62,6 +76,21 @@
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Slideshow JS
+        const slides = document.querySelectorAll('.slide');
+        let current = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        setInterval(() => {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        }, 3000); // change slide every 3 seconds
     </script>
 </body>
 </html>
