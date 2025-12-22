@@ -14,83 +14,38 @@
         <div class="brand-name">Studio Buwa</div>
 
         <div class="description">
-            We create all the designs your business needs, from professional office stationery to dynamic social media posts.
+            Hand-drawn designs transformed into premium clothing.
         </div>
 
-        <div class="contact-title">Contact Us</div>
+        <div class="section-title">Follow Us</div>
 
         <div class="socials">
-            <a href="https://wa.me/message/NJ7YNC44EFFVI1" target="_blank">
-                <img src="assets/images/whatsapp.png" alt="WhatsApp" class="icon" />
+            <a href="https://tiktok.com/@studiobuwa" target="_blank">
+                <img src="assets/images/tiktok.png" alt="TikTok" class="icon" />
             </a>
-            <a href="mailto:studiobuwa@gmail.com" target="_blank">
-                <img src="assets/images/email.png" alt="Email" class="icon" />
+            <a href="https://instagram.com/studiobuwa" target="_blank">
+                <img src="assets/images/instagram.png" alt="Instagram" class="icon" />
             </a>
-        </div>
-
-        <div class="section-title">Our Services</div>
-
-        <!-- Slideshow for first service -->
-        <div class="slideshow">
-            <img src="assets/images/design1.png" alt="Design Sample 1" class="slide active">
-            <img src="assets/images/design2.png" alt="Design Sample 2" class="slide">
-            <img src="assets/images/design3.png" alt="Design Sample 3" class="slide">
-            <img src="assets/images/design4.png" alt="Design Sample 4" class="slide">
-            <img src="assets/images/design5.png" alt="Design Sample 5" class="slide">
-        </div>
-
-        <!-- First service card -->
-        <div class="service-card">
-            <h2>Professional Design Services</h2>
-            <p>
-                We handle all your corporate and digital design needs. This includes crafting professional assets like letterheads, business cards, compliment slips, and engaging posts for all major social media platforms. We provide ready-to-use files tailored for both print and digital mediums.
-            </p>
-        </div>
-
-        <!-- Canva Training image above second service -->
-        <img src="assets/images/canva-training.png" alt="Canva Training Example" class="service-image">
-
-        <!-- Second service card -->
-        <div class="service-card">
-            <h2>Canva Training & Ad Strategy Workshops</h2>
-            <p>
-                Empower yourself or your team! We offer live, practical lessons on how to effectively use Canva to create your own business designs. This training also includes a critical module on how to run effective paid advertisements to drive sales and growth for your business.
-            </p>
-        </div>
-
-        <div class="contact-title">Contact Us</div>
-
-        <div class="socials">
-            <a href="https://wa.me/message/NJ7YNC44EFFVI1" target="_blank">
-                <img src="assets/images/whatsapp.png" alt="WhatsApp" class="icon" />
-            </a>
-            <a href="mailto:studiobuwa@gmail.com" target="_blank">
-                <img src="assets/images/email.png" alt="Email" class="icon" />
+            <a href="https://youtube.com/@studiobuwa" target="_blank">
+                <img src="assets/images/youtube.png" alt="YouTube" class="icon" />
             </a>
         </div>
+
+        <!-- Banner Image -->
+        <img src="assets/images/studiobanner.png" alt="StudioBanner" class="banner" />
+
+        <a class="store-button" href="https://selar.com/m/studiobuwa" target="_blank">
+            Visit Clothing Store
+        </a>
 
         <div class="footer">
             © <span id="year"></span> Studio Buwa
         </div>
+
     </div>
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
-
-        // Slideshow JS
-        const slides = document.querySelectorAll('.slide');
-        let current = 0;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.toggle('active', i === index);
-            });
-        }
-
-        setInterval(() => {
-            current = (current + 1) % slides.length;
-            showSlide(current);
-        }, 3000); // change slide every 3 seconds
     </script>
 </body>
 </html>
